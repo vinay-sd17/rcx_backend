@@ -1,0 +1,22 @@
+# [START gae_quickstart_yaml]
+runtime: nodejs12
+default_expiration: "2s"
+env_variables:
+  ENV_NAME: dev
+  DEVELOPMENT: true
+  JWT_SECRET: Rpx!@DevSecret
+  JWT_OBJECT_KEY: user
+  ENCRYPT_JWT_USER_OBJ: false
+  ON_KARDIACHAIN: true
+  KARDIA_CHAIN_ADDRESS: 0x11d6D469FafB86B561B3A1Fa1d883aa7bEf7dD76
+  BLOCK_ON_FAILED_CHAIN_ACTIONS: true
+
+
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+# [END gae_quickstart_yaml]
